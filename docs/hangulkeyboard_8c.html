@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>libhangul: hangulkeyboard.c 파일 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">libhangul
+   &#160;<span id="projectnumber">Version 0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','검색');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_876d4d4d0ecdc67c3c614d78775e82b6.html">hangul</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">매크로</a> &#124;
+<a href="#typedef-members">타입정의</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">hangulkeyboard.c 파일 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;hangul-gettext.h&quot;</code><br />
+<code>#include &quot;hangul.h&quot;</code><br />
+<code>#include &quot;hangulinternals.h&quot;</code><br />
+<code>#include &quot;hangulkeyboard.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+매크로</h2></td></tr>
+<tr class="memitem:ad77fae55e67547bff9006d0edbd26fd7"><td class="memItemLeft" align="right" valign="top"><a id="ad77fae55e67547bff9006d0edbd26fd7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIBHANGUL_KEYBOARD_DIR</b>&#160;&#160;&#160;LIBHANGUL_DATA_DIR &quot;/keyboards&quot;</td></tr>
+<tr class="separator:ad77fae55e67547bff9006d0edbd26fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcaecd327afc5ecbf29b2ef3e7c17a35"><td class="memItemLeft" align="right" valign="top"><a id="adcaecd327afc5ecbf29b2ef3e7c17a35"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HANGUL_KEYBOARD_TABLE_SIZE</b>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:adcaecd327afc5ecbf29b2ef3e7c17a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+타입정의</h2></td></tr>
+<tr class="memitem:afc7d7725c2a82c5e2ab8512c01af7d3f"><td class="memItemLeft" align="right" valign="top"><a id="afc7d7725c2a82c5e2ab8512c01af7d3f"></a>
+typedef struct _HangulCombinationItem&#160;</td><td class="memItemRight" valign="bottom"><b>HangulCombinationItem</b></td></tr>
+<tr class="separator:afc7d7725c2a82c5e2ab8512c01af7d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eda54f493476b7216f807f0cd5611df"><td class="memItemLeft" align="right" valign="top"><a id="a1eda54f493476b7216f807f0cd5611df"></a>
+typedef struct _HangulKeyboardList&#160;</td><td class="memItemRight" valign="bottom"><b>HangulKeyboardList</b></td></tr>
+<tr class="separator:a1eda54f493476b7216f807f0cd5611df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7876e2f0cdb408a1238623f4feed7d84"><td class="memItemLeft" align="right" valign="top"><a id="a7876e2f0cdb408a1238623f4feed7d84"></a>
+typedef struct _HangulKeyboardLoadContext&#160;</td><td class="memItemRight" valign="bottom"><b>HangulKeyboardLoadContext</b></td></tr>
+<tr class="separator:a7876e2f0cdb408a1238623f4feed7d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:a35027ede291c32b782b9cebecabe63c8"><td class="memItemLeft" align="right" valign="top"><a id="a35027ede291c32b782b9cebecabe63c8"></a>
+HangulCombination *&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_combination_new</b> ()</td></tr>
+<tr class="separator:a35027ede291c32b782b9cebecabe63c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15e7f6ea9795177cd87c5bf69a8216c"><td class="memItemLeft" align="right" valign="top"><a id="af15e7f6ea9795177cd87c5bf69a8216c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_combination_delete</b> (HangulCombination *combination)</td></tr>
+<tr class="separator:af15e7f6ea9795177cd87c5bf69a8216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edecc23e68405d7efc4098d44788846"><td class="memItemLeft" align="right" valign="top"><a id="a0edecc23e68405d7efc4098d44788846"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_combination_set_data</b> (HangulCombination *combination, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *first, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *second, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *result, unsigned int n)</td></tr>
+<tr class="separator:a0edecc23e68405d7efc4098d44788846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e31f577769f6d72f7c61afbd93264e"><td class="memItemLeft" align="right" valign="top"><a id="aa1e31f577769f6d72f7c61afbd93264e"></a>
+HangulKeyboard *&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_new</b> ()</td></tr>
+<tr class="separator:aa1e31f577769f6d72f7c61afbd93264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb31ff6712faeb296bda4ccfab5dca4d"><td class="memItemLeft" align="right" valign="top"><a id="adb31ff6712faeb296bda4ccfab5dca4d"></a>
+<a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_get_mapping</b> (const HangulKeyboard *keyboard, int tableid, unsigned key)</td></tr>
+<tr class="separator:adb31ff6712faeb296bda4ccfab5dca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eafff8267f318ef85dc9fd3a375bfc"><td class="memItemLeft" align="right" valign="top"><a id="a79eafff8267f318ef85dc9fd3a375bfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_set_value</b> (HangulKeyboard *keyboard, int key, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> value)</td></tr>
+<tr class="separator:a79eafff8267f318ef85dc9fd3a375bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6a0a97f6f81ffadc7227bcf07baef8"><td class="memItemLeft" align="right" valign="top"><a id="afe6a0a97f6f81ffadc7227bcf07baef8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_get_type</b> (const HangulKeyboard *keyboard)</td></tr>
+<tr class="separator:afe6a0a97f6f81ffadc7227bcf07baef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf5c8c293778d361ffa864df2caffe8"><td class="memItemLeft" align="right" valign="top"><a id="a1bf5c8c293778d361ffa864df2caffe8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_set_type</b> (HangulKeyboard *keyboard, int type)</td></tr>
+<tr class="separator:a1bf5c8c293778d361ffa864df2caffe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0656bbcc61e45427e1a7e06f7105cc2"><td class="memItemLeft" align="right" valign="top"><a id="af0656bbcc61e45427e1a7e06f7105cc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_delete</b> (HangulKeyboard *keyboard)</td></tr>
+<tr class="separator:af0656bbcc61e45427e1a7e06f7105cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9e40929005eb31dddd60711904de9c"><td class="memItemLeft" align="right" valign="top"><a id="aff9e40929005eb31dddd60711904de9c"></a>
+<a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_combine</b> (const HangulKeyboard *keyboard, unsigned id, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> first, <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> second)</td></tr>
+<tr class="separator:aff9e40929005eb31dddd60711904de9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b083c761705620ce8d6aa1cfcd24b10"><td class="memItemLeft" align="right" valign="top"><a id="a5b083c761705620ce8d6aa1cfcd24b10"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_list_init</b> ()</td></tr>
+<tr class="separator:a5b083c761705620ce8d6aa1cfcd24b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5456fd6e1542e9ce76377e3c37add21"><td class="memItemLeft" align="right" valign="top"><a id="ae5456fd6e1542e9ce76377e3c37add21"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_list_fini</b> ()</td></tr>
+<tr class="separator:ae5456fd6e1542e9ce76377e3c37add21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0a5734283fed6479673703779858026"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#gab0a5734283fed6479673703779858026">hangul_keyboard_list_get_count</a> ()</td></tr>
+<tr class="memdesc:gab0a5734283fed6479673703779858026"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판 개수를 구하는 함수  <a href="group__hangulkeyboards.html#gab0a5734283fed6479673703779858026">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gab0a5734283fed6479673703779858026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8da7155c5c9f903ea5028453d8698f6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#gaf8da7155c5c9f903ea5028453d8698f6">hangul_keyboard_list_get_keyboard_id</a> (unsigned index_)</td></tr>
+<tr class="memdesc:gaf8da7155c5c9f903ea5028453d8698f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판의 id를 구하는 함수  <a href="group__hangulkeyboards.html#gaf8da7155c5c9f903ea5028453d8698f6">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gaf8da7155c5c9f903ea5028453d8698f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b78ad835511e2404f6743450b1262e3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#ga8b78ad835511e2404f6743450b1262e3">hangul_keyboard_list_get_keyboard_name</a> (unsigned index_)</td></tr>
+<tr class="memdesc:ga8b78ad835511e2404f6743450b1262e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판의 이름을 구하는 함수  <a href="group__hangulkeyboards.html#ga8b78ad835511e2404f6743450b1262e3">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga8b78ad835511e2404f6743450b1262e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd2d96f3b9b1f615128b0ecf6cfeb94"><td class="memItemLeft" align="right" valign="top"><a id="abdd2d96f3b9b1f615128b0ecf6cfeb94"></a>
+const HangulKeyboard *&#160;</td><td class="memItemRight" valign="bottom"><b>hangul_keyboard_list_get_keyboard</b> (const char *id)</td></tr>
+<tr class="separator:abdd2d96f3b9b1f615128b0ecf6cfeb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
