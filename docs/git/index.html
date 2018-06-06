@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>libhangul: 메인 페이지</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">libhangul
+   &#160;<span id="projectnumber">Version 0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','검색');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">libhangul 문서화</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="introduction"></a>
+libhangul 소개</h1>
+<p>libhangul은 기본적인 한글 관련 루틴들을 구현한 라이브러리다. 주로 한글 입력기능을 구현한 것으로 이 라이브러리를 사용하면 비교적 손쉽게 한글 입력기를 구현할 수 있다. 현재 많은 linux의 입력기들이 이 라이브러리로 구현되어 있다.</p>
+<h1><a class="anchor" id="documentation"></a>
+개발 문서</h1>
+<p>libhangul에서 제공하는 기능들은 다음 레퍼런스에서 찾아볼 수 있다. </p><ul>
+<li><a class="el" href="group__hangulctype.html#hangulctype">한글 글자 조작</a> : 유니코드로된 한글 글자를 구분하고 조작하는 함수이다. 이 함수들을 이용하면 자모 코드를 음절로 조합할 수 있고 또 음절을 자모 코드로 분리할 수 있다. </li>
+<li><a class="el" href="group__hangulic.html#hangulicusage">Hangul Input Context의 사용법</a> : 한글 입력 기능을 제공한다. 이 함수들을 이용하여 키 입력에 따른 한글 조합 기능을 손쉽게 구현할 수 있다. </li>
+<li><a class="el" href="group__hanjadictionary.html#hanjadictionaryusage">한자 사전 루틴의 사용 방법</a> : 한자 사전 파일 관련 기능을 제공한다. 이 함수들을 이용하여 libhangul에서 제공하는 한자 사전 파일을 찾아볼 수 있다. </li>
+<li><a class="el" href="group__hangulkeyboards.html">한글 자판</a> : libhangul에서 제공하는 한글 자판에 대한 설명이다.</li>
+</ul>
+<h1><a class="anchor" id="download"></a>
+다운로드</h1>
+<p>최근 릴리스들은 libhangul의 프로젝트 페이지에서 받을 수 있다.</p>
+<p><a href="https://github.com/libhangul/libhangul/releases">https://github.com/libhangul/libhangul/releases</a></p>
+<p>개발버젼의 소스는 <a href="http://github.com/">github</a>의 repository에서 받을 수 있다.</p>
+<div class="fragment"><div class="line">git clone git:<span class="comment">//github.com/libhangul/libhangul.git</span></div></div><!-- fragment --><h1><a class="anchor" id="compile"></a>
+libhangul 어플리케이션 컴파일</h1>
+<p>libhangul을 사용하는 어플리케이션을 컴파일하기 위해서는 libhangul 헤더파일과 라이브러리 바이너리 파일의 위치를 컴파일러에게 알려주어야 한다. 이런 것을 쉽게 하기 위해서 libhangul은 pkg-config를 사용하고 있다.</p>
+<p>간단한 사용 예시는 아래와 같이 컴파일하는 것이다. 아래에 사용한 `는 backtick이라는 것으로 '(작은 따옴표)가 아님에 주의한다. </p><div class="fragment"><div class="line">$ cc `pkg-config --cflags --libs libhangul` yoursource.c -o yourbin</div></div><!-- fragment --><p>또는 아래와 같은 명령으로 컴파일에 필요한 플래그와 링크에 필요한 플래그를 각각 얻을 수 있다: </p><div class="fragment"><div class="line">$ pkg-config --cflags libhangul</div><div class="line">$ pkg-config --libs libhangul</div></div><!-- fragment --><p>pkg-config에 대한 자세한 정보는 아래 링크를 참조하라:</p>
+<p><a href="http://www.freedesktop.org/wiki/Software/pkg-config">http://www.freedesktop.org/wiki/Software/pkg-config</a></p>
+<h1><a class="anchor" id="bug"></a>
+버그리포트</h1>
+<p>libhangul의 버그는 <a href="https://github.com/">GitHub</a>의 이슈트래커로 관리하고 있다.</p>
+<p>이슈트래커: <a href="https://github.com/libhangul/libhangul/issues">https://github.com/libhangul/libhangul/issues</a></p>
+<h1><a class="anchor" id="website"></a>
+웹주소</h1>
+<p>libhangul은 <a href="https://github.com/">GitHub</a>에서 호스팅되고 있다.</p>
+<p>Project page: <a href="https://github.com/libhangul/libhangul">https://github.com/libhangul/libhangul</a> </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

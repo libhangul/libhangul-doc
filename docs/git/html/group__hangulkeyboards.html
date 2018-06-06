@@ -1,0 +1,1445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>libhangul: 한글 자판</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">libhangul
+   &#160;<span id="projectnumber">Version 0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','검색');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">한글 자판</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gab0a5734283fed6479673703779858026"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#gab0a5734283fed6479673703779858026">hangul_keyboard_list_get_count</a> ()</td></tr>
+<tr class="memdesc:gab0a5734283fed6479673703779858026"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판 개수를 구하는 함수  <a href="#gab0a5734283fed6479673703779858026">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gab0a5734283fed6479673703779858026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8da7155c5c9f903ea5028453d8698f6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#gaf8da7155c5c9f903ea5028453d8698f6">hangul_keyboard_list_get_keyboard_id</a> (unsigned index_)</td></tr>
+<tr class="memdesc:gaf8da7155c5c9f903ea5028453d8698f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판의 id를 구하는 함수  <a href="#gaf8da7155c5c9f903ea5028453d8698f6">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gaf8da7155c5c9f903ea5028453d8698f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b78ad835511e2404f6743450b1262e3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hangulkeyboards.html#ga8b78ad835511e2404f6743450b1262e3">hangul_keyboard_list_get_keyboard_name</a> (unsigned index_)</td></tr>
+<tr class="memdesc:ga8b78ad835511e2404f6743450b1262e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">libhangul에서 제공하는 자판의 이름을 구하는 함수  <a href="#ga8b78ad835511e2404f6743450b1262e3">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga8b78ad835511e2404f6743450b1262e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<h1><a class="anchor" id="supportkeyboards"></a>
+libhangul이 지원하는 한글 자판</h1>
+<p>libhangul에서 지원하는 자판은 <a class="el" href="group__hangulkeyboards.html#layout_2">두벌식</a>, <a class="el" href="group__hangulkeyboards.html#layout_2y">두벌식 옛글</a>, <a class="el" href="group__hangulkeyboards.html#layout_3f">세벌식 최종</a>, <a class="el" href="group__hangulkeyboards.html#layout_390">세벌식 390</a>, <a class="el" href="group__hangulkeyboards.html#layout_3s">세벌식 순아래</a>, <a class="el" href="group__hangulkeyboards.html#layout_3y">세벌식 옛글</a>, <a class="el" href="group__hangulkeyboards.html#layout_ahn">안마태</a>, <a class="el" href="group__hangulkeyboards.html#layout_ro">로마자</a> 자판 이다.</p>
+<p>아래의 자판 배열은 libhangul에서 지원하는 자판을 알아보기 쉽게 그림형태로 나타낸 것이다. </p><ul>
+<li>각 네모에 표시된 글자중 위에 있는 글자는 shift와 함께 눌렀을때 입력되는 글자고 아래에 있는 글자는 그냥 눌렀을때 입력되는 글자다. </li>
+<li>초성, 중성, 종성은 각각 붉은색, 녹색, 파란색(RGB 순서)으로 표시하였다. </li>
+<li>한글이 아닌 것은 검은색으로 표시하였다.</li>
+</ul>
+<p> 
+
+<style type="text/css">
+
+.choseong {
+        color: darkred;
+}
+
+.jungseong {
+        color: darkgreen;
+}
+
+.jongseong {
+        color: darkblue;
+}
+
+.other {
+        color: black;
+}
+
+table.keyboard {
+        font-family: sans-serif;
+        font-size: 120%;
+        border: 0px solid darkgray;
+        padding: 3px;
+        border-collapse: collapse;
+        border-collapse: separate;
+}
+
+td.emptycell {
+        width: 8px;
+        height: -3px;
+        padding: 0px;
+        margin: 0px;
+        border-style: none;
+}
+
+td.keycell {
+        text-align: center;
+        line-height: 110%;
+        background: whitesmoke;
+        padding: 2px;
+        margin: 1px;
+        border: 1px solid dimgray;
+        //border-width: 0px 1px 1px 0px;
+}
+
+td.graykeycell {
+        font-size: small;
+        text-align: center;
+        line-height: 110%;
+        color: lightgray;
+        background-color: white;
+        padding: 2px;
+        margin: 0px;
+        border: 2px solid lightgray;
+        border-width: 1px 1px 1px 1px;
+}
+
+</style>
+
+</p>
+<h1><a class="anchor" id="layout_2"></a>
+두벌식</h1>
+<p>이 자판은 표준 두벌식을 구현한 것이다. 그러나 표준 자판과 조금 다른 동작이 있다. 된소리 ㅃㅉㄸㄲㅆ들은 shift와 함께 누르는 방법 이외에도 반복해서 누르면 입력된다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="other">&#49;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="other">&#50;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="other">&#51;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="other">&#52;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="other">&#53;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="other">&#54;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="other">&#55;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="other">&#56;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="other">&#57;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="other">&#48;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="choseong">&#12611;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12617;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12600;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12594;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12614;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12630;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#91;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#93;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="other">&#59;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="other">&#39;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="other">&#47;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_2y"></a>
+두벌식 옛글</h1>
+<p>이 자판은 옛한글을 입력하기 위한 두벌식 자판이다. 아래한글의 두벌식 옛글 자판과 같은 배열을 가지도록 만들었다. <a class="el" href="group__hangulkeyboards.html#layout_2">두벌식</a> 자판과 마찬가지로 된소리를 두번 누르는 방법으로 입력할 수 있다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="other">&#49;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="other">&#50;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="other">&#51;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="other">&#52;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="other">&#53;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="other">&#54;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="other">&#55;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="other">&#56;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="other">&#57;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="other">&#48;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="choseong">&#12611;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12617;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12600;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12594;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12614;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12630;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#91;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#93;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="choseong">&#12671;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4445;&#4448;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12673;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12608;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12678;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#4447;&#4483;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12685;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12684;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="other">&#59;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="other">&#39;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="choseong">&#4412;&#4448;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4414;&#4448;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4430;&#4448;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4432;&#4448;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4436;&#4448;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4437;&#4448;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="other">&#47;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_3f"></a>
+세벌식 최종</h1>
+<p>이 자판은 세벌식 최종 자판을 구현한 것이다. 원래 방식대로라면 왼쪽의 ㅗㅜ는 다른 모음과 조합되지 않아야 하지만, libhangul에서는 좌우의 ㅗㅜ를 구분하지 않고 다른 모음과 조합된다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#8251;</span><br/><span class="other">&#42;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12594;</span><br/><span class="jongseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12602;</span><br/><span class="jongseong">&#12614;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12616;</span><br/><span class="jongseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12607;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12606;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#61;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#8220;</span><br/><span class="jungseong">&#12630;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#8221;</span><br/><span class="jungseong">&#12642;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#39;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#59;</span><br/><span class="other">&#41;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#62;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12621;</span><br/><span class="jongseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12620;</span><br/><span class="jongseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12597;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12608;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12605;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#53;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#54;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#55;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#56;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#57;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="other">&#40;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#47;</span><br/><span class="other">&#60;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#92;</span><br/><span class="other">&#58;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12599;</span><br/><span class="jongseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12598;</span><br/><span class="jongseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12604;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12603;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#48;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#49;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#50;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#51;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#52;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#183;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12618;</span><br/><span class="jongseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12612;</span><br/><span class="jongseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12619;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12595;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#45;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_390"></a>
+세벌식 390</h1>
+<p>이 자판은 세벌식 390 자판을 구현한 것이다. 원래 방식대로라면 왼쪽의 ㅗㅜ는 다른 모음과 조합되지 않아야 하지만, libhangul에서는 좌우의 ㅗㅜ를 구분하지 않고 다른 모음과 조합된다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12616;</span><br/><span class="jongseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="jongseong">&#12614;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="jongseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="jungseong">&#12630;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="jungseong">&#12642;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12621;</span><br/><span class="jongseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12620;</span><br/><span class="jongseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12619;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#59;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#55;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#56;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#57;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#91;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#93;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12599;</span><br/><span class="jongseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12598;</span><br/><span class="jongseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12602;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12594;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#47;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#39;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#52;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#53;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#54;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12618;</span><br/><span class="jongseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12612;</span><br/><span class="jongseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12603;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12608;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#48;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#49;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#50;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#51;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_3s"></a>
+세벌식 순아래</h1>
+<p>이 자판은 세벌식 순아래 자판을 구현한 것이다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="jongseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="jongseong">&#12614;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="jongseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="jungseong">&#12630;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="jungseong">&#12642;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="jungseong">&#12626;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="jongseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="jongseong">&#12618;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#59;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#55;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#56;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#57;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="jongseong">&#12620;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="jongseong">&#12621;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="jongseong">&#12619;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#91;</span><br/><span class="jongseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#93;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#47;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#39;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#52;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#53;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#54;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="other">&#45;</span><br/><span class="jongseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#61;</span><br/><span class="jongseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#92;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#48;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#49;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#50;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#51;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="jongseong">&#12599;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_3y"></a>
+세벌식 옛글</h1>
+<p>이 자판은 세벌식 옛글 자판을 구현한 것이다. 자판 배열은 아래한글의 세벌식 옛글 자판과 동일하다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="jongseong">&#4447;&#4448;&#4592;</span><br/><span class="jongseong">&#4447;&#4448;&#4601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12616;</span><br/><span class="jongseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#4447;&#4448;&#4587;</span><br/><span class="jongseong">&#12614;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="jongseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12673;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="jungseong">&#12630;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="jungseong">&#12642;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12621;</span><br/><span class="jongseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12620;</span><br/><span class="jongseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12619;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#59;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#183;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4436;&#4448;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4437;&#4448;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#91;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#93;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12599;</span><br/><span class="jongseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12598;</span><br/><span class="jongseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12602;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12594;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12685;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#39;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12673;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4430;&#4448;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4432;&#4448;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12618;</span><br/><span class="jongseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12612;</span><br/><span class="jongseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12603;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12608;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12671;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12678;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4412;&#4448;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#4414;&#4448;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_32"></a>
+세벌식 두벌배열</h1>
+<p>이 자판은 두벌식 자판의 배열을 그대로 사용하면서 shift와 함께 자음을 누르면 종성으로 입력되도록 만든 자판이다. 일반 사용을 위해 만들어진 것이 아니고 두벌식 사용자가 손쉽게 세벌식 자판의 테스트를 할 수 있도록 하기 위해서 만든 자판이다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#8251;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="other">&#49;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="other">&#50;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="other">&#51;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="other">&#52;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="other">&#53;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="other">&#54;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="other">&#55;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="other">&#56;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="other">&#57;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="other">&#48;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12610;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12616;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12599;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12593;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12613;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12626;</span><br/><span class="jungseong">&#12624;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12630;</span><br/><span class="jungseong">&#12628;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#91;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#93;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12609;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12596;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12615;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12601;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12622;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="other">&#59;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="other">&#39;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12619;</span><br/><span class="choseong">&#12619;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12620;</span><br/><span class="choseong">&#12620;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12618;</span><br/><span class="choseong">&#12618;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#12621;</span><br/><span class="choseong">&#12621;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="other">&#46;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#63;</span><br/><span class="other">&#47;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_ahn"></a>
+안마태</h1>
+<p>이 자판은 안마태 자판을 구현한 것이다. libhangul의 안마태 자판 구현은 안마태 자판의 규격을 충실하게 구현한 것은 아니고 적당한 수준에서 사용가능하게 만든 것이다. 키입력이 동시에 일어났는지 판단하여 입력을 하는 방식이 아니고, 키를 순서대로 입력하여도 자모를 조합하도록 구현하여, 안마태 자판과 유사한 동작을 하도록 구현하였다.</p>
+<p> 
+
+<table class="keyboard">
+<tr>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+<td class="emptycell"></td>
+</tr>
+<tr>
+<td class="keycell" colspan="4"><span class="other">&#126;</span><br/><span class="other">&#96;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#33;</span><br/><span class="other">&#49;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#64;</span><br/><span class="other">&#50;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#35;</span><br/><span class="other">&#51;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#36;</span><br/><span class="other">&#52;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#37;</span><br/><span class="other">&#53;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#94;</span><br/><span class="other">&#54;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#38;</span><br/><span class="other">&#55;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#42;</span><br/><span class="other">&#56;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#40;</span><br/><span class="other">&#57;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#41;</span><br/><span class="other">&#48;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#95;</span><br/><span class="other">&#45;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#43;</span><br/><span class="other">&#61;</span></td>
+<td class="graykeycell" colspan="8">Backspace</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="6">Tab</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12671;</span><br/><span class="choseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12678;</span><br/><span class="choseong">&#12622;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#59;</span><br/><span class="jungseong">&#12629;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#39;</span><br/><span class="jungseong">&#12625;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#47;</span><br/><span class="jungseong">&#12641;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#91;</span><br/><span class="jungseong">&#12635;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#93;</span><br/><span class="jungseong">&#12640;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#123;</span><br/><span class="other">&#44;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#125;</span><br/><span class="other">&#63;</span></td>
+<td class="keycell" colspan="6"><span class="other">&#124;</span><br/><span class="other">&#92;</span></td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="8">Caps Lock</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="choseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="choseong">&#12673;</span><br/><span class="choseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12627;</span></td>
+<td class="keycell" colspan="4"><span class="jungseong">&#12685;</span><br/><span class="jungseong">&#12623;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12643;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jungseong">&#12631;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#58;</span><br/><span class="jungseong">&#12636;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#34;</span><br/><span class="other">&#46;</span></td>
+<td class="graykeycell" colspan="8">Enter</td>
+</tr>
+<tr>
+<td class="graykeycell" colspan="10">Shift</td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12616;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12599;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12610;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12593;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#4447;&#4448;&#4592;</span><br/><span class="jongseong">&#12615;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#4447;&#4448;&#4587;</span><br/><span class="jongseong">&#12613;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#32;</span><br/><span class="jongseong">&#12596;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#60;</span><br/><span class="jongseong">&#12609;</span></td>
+<td class="keycell" colspan="4"><span class="other">&#62;</span><br/><span class="jongseong">&#12601;</span></td>
+<td class="keycell" colspan="4"><span class="jongseong">&#4447;&#4448;&#4601;</span><br/><span class="jongseong">&#12622;</span></td>
+<td class="graykeycell" colspan="10">Shift</td>
+</tr>
+<!--
+<tr>
+<td class="graykeycell" colspan="5">Ctrl</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">한자</td>
+<td class="graykeycell" colspan="20">&nbsp;<br/>&nbsp;</td>
+<td class="graykeycell" colspan="4">한/영</td>
+<td class="graykeycell" colspan="5">Alt</td>
+<td class="graykeycell" colspan="4">Super</td>
+<td class="graykeycell" colspan="4">Menu</td>
+<td class="graykeycell" colspan="5">Ctrl</td>
+</tr>
+-->
+</table>
+
+</p>
+<h1><a class="anchor" id="layout_ro"></a>
+로마자</h1>
+<p>이 자판은 현재 자판 배열의 라틴 문자를 음차하여 한글로 입력되도록 만든 자판이다. 예를 들면 'an'을 치면 '안'이 입력되는 방식이다. 로마자 자판은 다른 한글자판과 달리 <a href="http://en.wikipedia.org/wiki/Transliteration">Transliteration</a> 방식으로 작동하는 자판이므로 별도의 레이아웃이 없다. 이 입력 자판에서 사용한 알파벳과 한글 자모의 대응은 기본적으로 한글 로마자 표기법과 유사하지만 동일하지는 않다. 로마자 자판은 한글을 입력하기 위한 것이므로 한글을 그럴듯 하게 표기하기 위한 로마자 표기법과는 목적이 다르다. 주로 한글 자모를 모두 입력할 수 있도록 하는 것을 우선적으로 고려하였다. 따라서 아래 자판의 대응대로 한글을 로마자로 표기하는 것은 로마자 표기법으로는 적절하지 않다.</p>
+<p>한글 자모와 알파벳의 대응은 아래와 같다. </p><ul>
+<li>ㄱ : g </li>
+<li>ㄴ : n </li>
+<li>ㄷ : d </li>
+<li>ㄹ : r, l </li>
+<li>ㅁ : m </li>
+<li>ㅂ : b, v </li>
+<li>ㅅ : s </li>
+<li>ㅇ : ng </li>
+<li>ㅈ : j </li>
+<li>ㅊ : c, ch </li>
+<li>ㅋ : k, q </li>
+<li>ㅌ : t </li>
+<li>ㅍ : f, p </li>
+<li>ㅎ : h</li>
+</ul>
+<ul>
+<li>ㄲ : gg </li>
+<li>ㄸ : dd </li>
+<li>ㅃ : bb </li>
+<li>ㅆ : ss </li>
+<li>ㅉ : jj </li>
+<li>ㅊ : ch</li>
+</ul>
+<ul>
+<li>ㅏ : a </li>
+<li>ㅐ : ae, ai </li>
+<li>ㅑ : ya, ia </li>
+<li>ㅒ : yae, yai, iae, iai </li>
+<li>ㅓ : eo </li>
+<li>ㅔ : e </li>
+<li>ㅕ : yeo, ieo </li>
+<li>ㅖ : ye, ie </li>
+<li>ㅗ : o </li>
+<li>ㅘ : oa, wa </li>
+<li>ㅙ : oae, oai </li>
+<li>ㅚ : oi </li>
+<li>ㅛ : yo, io </li>
+<li>ㅜ : u, w </li>
+<li>ㅝ : ueo, weo, uo </li>
+<li>ㅞ : ue </li>
+<li>ㅟ : ui, wi </li>
+<li>ㅠ : yu, iu </li>
+<li>ㅡ : eu </li>
+<li>ㅢ : eui </li>
+<li>ㅣ : i, y</li>
+</ul>
+<p>그 외에 다음과 같은 조합 규칙이 있다.</p>
+<ul>
+<li>자음없이 모음만 먼저 입력하면 초성 ㅇ이 추가된다. 예를 들어 'a'만 눌러도 '아'로 입력된다. </li>
+<li>ng 는 종성 ㅇ으로 입력된다. </li>
+<li>x는 음절의 시작에서는 초성 ㅈ, 끝에서는 종성 ㄳ으로 입력된다. </li>
+<li>종성의 자음군은 앞음절의 글자로 입력된다. 예를 들어 'banga'는 '방아'로 입력된다. </li>
+<li>대문자를 입력하면 음절의 시작으로 인식한다. 예를 들어 'banga'는 '방아'로, 'banGa'는 '반가'로 입력된다. 'beos'는 '벗'으로 'beOs'는 '베옷'으로 입력된다. </li>
+<li>자음군으로 음절이 시작되면 ㅡ를 자동으로 추가한다. 예를 들어 'string'을 입력하면 s와 t에 ㅡ가 붙게 되어 '스트링'으로 입력된다.</li>
+</ul>
+<dl class="section see"><dt>참고</dt><dd>다음 위키 페이지를 참조하라. <br />
+<a href="http://en.wikipedia.org/wiki/Korean_romanization">http://en.wikipedia.org/wiki/Korean_romanization</a> <br />
+<a href="http://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">http://en.wikipedia.org/wiki/Revised_Romanization_of_Korean</a></dd></dl>
+<h1><a class="anchor" id="addinghangulkeyboards"></a>
+한글 키보드 추가 방법</h1>
+<p>libhangul이 한글 키보드 파일을 읽는 위치는 두 곳이다.</p><ul>
+<li>$(pkgdatadir)/keyboards 디렉토리에 설치된 파일은 전역 시스템에서 인식한다.</li>
+<li>$HOME/.local/share/libhangul/keyboards 또는 $XDG_DATA_HOME/libhangul/keyboards 디렉토리에 설치된 파일은 개별 사용자만 인식한다.</li>
+</ul>
+<p>키보드 파일의 로딩 순서는 시스템 파일을 먼저 로딩하고 사용자 파일을 로딩한다. 따라서 한글 키보드 목록을 이터레이션하면 사용자 추가 자판은 마지막에 나오게 된다. 사용자 자판 선택 알고리듬이 처음 나온 자판을 인식하는 방식이므로 동일한 id를 가진 자판을 등록하면 먼저 등록된 자판만 인식되므로 주의가 필요하다. 다시 말해서 시스템 자판과 같은 id를 가진 자판은 등록하여 사용할 수 없다. </p>
+<h2 class="groupheader">함수 문서화</h2>
+<a id="gab0a5734283fed6479673703779858026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0a5734283fed6479673703779858026">&#9670;&nbsp;</a></span>hangul_keyboard_list_get_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int hangul_keyboard_list_get_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>libhangul에서 제공하는 자판 개수를 구하는 함수 </p>
+<p>이 함수의 리턴값을 이용해서 자판을 iteration할 수 있다. 한글 자판의 설치 위치에 대한 정보는 <a class="el" href="group__hangulkeyboards.html#addinghangulkeyboards">한글 키보드 추가 방법</a> 를 참고하라. </p><dl class="section return"><dt>반환값</dt><dd><a class="el" href="group__hangulic.html#ga623ec57b85ebf33279989f3e6bc2d59a">HangulInputContext</a> 에서 선택 가능한 자판 개수 </dd></dl>
+
+<p class="reference">다음에 의해서 참조됨 :  <a class="el" href="hangulinputcontext_8c.html#a5d47f1e2719d4b2da567fbd5e4c2358f">hangul_ic_get_n_keyboards()</a>.</p>
+
+</div>
+</div>
+<a id="gaf8da7155c5c9f903ea5028453d8698f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8da7155c5c9f903ea5028453d8698f6">&#9670;&nbsp;</a></span>hangul_keyboard_list_get_keyboard_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* hangul_keyboard_list_get_keyboard_id </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>libhangul에서 제공하는 자판의 id를 구하는 함수 </p>
+<p><em>index_</em> 로 지정된 자판의 id 값을 리턴한다. 이 id는 <a class="el" href="group__hangulic.html#ga7dd66ed8f04fe95ff401f2b29e10db1f">hangul_ic_select_keyboard()</a> 함수의 인자로 사용하는 문자열이다. </p><dl class="section return"><dt>반환값</dt><dd>지정된 자판의 id. 이 문자열은 libhangul 내부에서 관리하는 것으로 free해서는 안된다. </dd></dl>
+
+<p class="reference">다음에 의해서 참조됨 :  <a class="el" href="hangulinputcontext_8c.html#aa4483f1201eb7c65721a55cf115f3f37">hangul_ic_get_keyboard_id()</a>.</p>
+
+</div>
+</div>
+<a id="ga8b78ad835511e2404f6743450b1262e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b78ad835511e2404f6743450b1262e3">&#9670;&nbsp;</a></span>hangul_keyboard_list_get_keyboard_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* hangul_keyboard_list_get_keyboard_name </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>libhangul에서 제공하는 자판의 이름을 구하는 함수 </p>
+<p><em>index_</em> 로 지정된 자판의 이름을 리턴한다. 이 문자열은 사용자에게 보여주기 위한 것으로, 번역되어 사람이 읽을 수 있는 형태의 문자열이다. </p><dl class="section return"><dt>반환값</dt><dd>지정된 자판의 이름. 이 문자열은 libhangul 내부에서 관리하는 것으로 free해서는 안된다. </dd></dl>
+
+<p class="reference">다음에 의해서 참조됨 :  <a class="el" href="hangulinputcontext_8c.html#a3f2b7753d6274dc938390406fa39c2d9">hangul_ic_get_keyboard_name()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

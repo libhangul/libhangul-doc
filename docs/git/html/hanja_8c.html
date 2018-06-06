@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>libhangul: hanja.c 파일 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">libhangul
+   &#160;<span id="projectnumber">Version 0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','검색');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_876d4d4d0ecdc67c3c614d78775e82b6.html">hangul</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">매크로</a> &#124;
+<a href="#typedef-members">타입정의</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">hanja.c 파일 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;hangul.h&quot;</code><br />
+<code>#include &quot;hangulinternals.h&quot;</code><br />
+<code>#include &quot;hanjacompatible.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+매크로</h2></td></tr>
+<tr class="memitem:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memItemLeft" align="right" valign="top"><a id="aa8cecfc5c5c054d2875c03e77b7be15d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TRUE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top"><a id="aa93f0eb578d23995850d61f7d61c55c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FALSE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa93f0eb578d23995850d61f7d61c55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+타입정의</h2></td></tr>
+<tr class="memitem:a788b62c5b5b50be0c2324fb41c241e3a"><td class="memItemLeft" align="right" valign="top"><a id="a788b62c5b5b50be0c2324fb41c241e3a"></a>
+typedef struct _HanjaIndex&#160;</td><td class="memItemRight" valign="bottom"><b>HanjaIndex</b></td></tr>
+<tr class="separator:a788b62c5b5b50be0c2324fb41c241e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0305d3fb0f62615c9515a7cd4219c3b1"><td class="memItemLeft" align="right" valign="top"><a id="a0305d3fb0f62615c9515a7cd4219c3b1"></a>
+typedef struct _HanjaPair&#160;</td><td class="memItemRight" valign="bottom"><b>HanjaPair</b></td></tr>
+<tr class="separator:a0305d3fb0f62615c9515a7cd4219c3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0e6994643783e06166588e9be98aff"><td class="memItemLeft" align="right" valign="top"><a id="aef0e6994643783e06166588e9be98aff"></a>
+typedef struct _HanjaPairArray&#160;</td><td class="memItemRight" valign="bottom"><b>HanjaPairArray</b></td></tr>
+<tr class="separator:aef0e6994643783e06166588e9be98aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga859e26859e874957f89be5debd783644"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga859e26859e874957f89be5debd783644">hanja_get_key</a> (const <a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> *hanja)</td></tr>
+<tr class="memdesc:ga859e26859e874957f89be5debd783644"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> 의 키를 찾아본다.  <a href="group__hanjadictionary.html#ga859e26859e874957f89be5debd783644">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga859e26859e874957f89be5debd783644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b86a3debe7ca1db3edf86c4db6b07e6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga3b86a3debe7ca1db3edf86c4db6b07e6">hanja_get_value</a> (const <a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> *hanja)</td></tr>
+<tr class="memdesc:ga3b86a3debe7ca1db3edf86c4db6b07e6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> 의 값을 찾아본다.  <a href="group__hanjadictionary.html#ga3b86a3debe7ca1db3edf86c4db6b07e6">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga3b86a3debe7ca1db3edf86c4db6b07e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72b4748e039981d3f63d76fb6431361f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga72b4748e039981d3f63d76fb6431361f">hanja_get_comment</a> (const <a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> *hanja)</td></tr>
+<tr class="memdesc:ga72b4748e039981d3f63d76fb6431361f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> 의 설명을 찾아본다.  <a href="group__hanjadictionary.html#ga72b4748e039981d3f63d76fb6431361f">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga72b4748e039981d3f63d76fb6431361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaad25fe6ea42acca94b6e94868d2d4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hanjadictionary.html#gad58042533438c8e2672738474bf9f981">HanjaTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#gaaad25fe6ea42acca94b6e94868d2d4fc">hanja_table_load</a> (const char *filename)</td></tr>
+<tr class="memdesc:gaaad25fe6ea42acca94b6e94868d2d4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전 파일을 로딩하는 함수  <a href="group__hanjadictionary.html#gaaad25fe6ea42acca94b6e94868d2d4fc">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gaaad25fe6ea42acca94b6e94868d2d4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59c749533062905732587d0ff9b6f5a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga59c749533062905732587d0ff9b6f5a9">hanja_table_delete</a> (<a class="el" href="group__hanjadictionary.html#gad58042533438c8e2672738474bf9f981">HanjaTable</a> *table)</td></tr>
+<tr class="memdesc:ga59c749533062905732587d0ff9b6f5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전 object를 free하는 함수  <a href="group__hanjadictionary.html#ga59c749533062905732587d0ff9b6f5a9">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga59c749533062905732587d0ff9b6f5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf260f28723a8084ed36e81d751f394f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#gaf260f28723a8084ed36e81d751f394f2">hanja_table_match_exact</a> (const <a class="el" href="group__hanjadictionary.html#gad58042533438c8e2672738474bf9f981">HanjaTable</a> *table, const char *key)</td></tr>
+<tr class="memdesc:gaf260f28723a8084ed36e81d751f394f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전에서 매치되는 키를 가진 엔트리를 찾는 함수  <a href="group__hanjadictionary.html#gaf260f28723a8084ed36e81d751f394f2">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gaf260f28723a8084ed36e81d751f394f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8605f5e6a162e9bc60ca6ff43b4369e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga8605f5e6a162e9bc60ca6ff43b4369e6">hanja_table_match_prefix</a> (const <a class="el" href="group__hanjadictionary.html#gad58042533438c8e2672738474bf9f981">HanjaTable</a> *table, const char *key)</td></tr>
+<tr class="memdesc:ga8605f5e6a162e9bc60ca6ff43b4369e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전에서 앞부분이 매치되는 키를 가진 엔트리를 찾는 함수  <a href="group__hanjadictionary.html#ga8605f5e6a162e9bc60ca6ff43b4369e6">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga8605f5e6a162e9bc60ca6ff43b4369e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2466c41d985a584f569b2ed6b9c74cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga2466c41d985a584f569b2ed6b9c74cca">hanja_table_match_suffix</a> (const <a class="el" href="group__hanjadictionary.html#gad58042533438c8e2672738474bf9f981">HanjaTable</a> *table, const char *key)</td></tr>
+<tr class="memdesc:ga2466c41d985a584f569b2ed6b9c74cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전에서 뒷부분이 매치되는 키를 가진 엔트리를 찾는 함수  <a href="group__hanjadictionary.html#ga2466c41d985a584f569b2ed6b9c74cca">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga2466c41d985a584f569b2ed6b9c74cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga752da8c61bdfd61b9fbca08fb585e490"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga752da8c61bdfd61b9fbca08fb585e490">hanja_list_get_size</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list)</td></tr>
+<tr class="memdesc:ga752da8c61bdfd61b9fbca08fb585e490"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 가 가지고 있는 아이템의 갯수를 구하는 함수 <br /></td></tr>
+<tr class="separator:ga752da8c61bdfd61b9fbca08fb585e490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fb2943130c52b8dc57566beca98a305"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga1fb2943130c52b8dc57566beca98a305">hanja_list_get_key</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list)</td></tr>
+<tr class="memdesc:ga1fb2943130c52b8dc57566beca98a305"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 가 생성될때 검색함수에서 사용한 키를 구하는 함수  <a href="group__hanjadictionary.html#ga1fb2943130c52b8dc57566beca98a305">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga1fb2943130c52b8dc57566beca98a305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18b8b720d23613a7895f23f7dad926e1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga18b8b720d23613a7895f23f7dad926e1">hanja_list_get_nth</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list, unsigned int n)</td></tr>
+<tr class="memdesc:ga18b8b720d23613a7895f23f7dad926e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 의 n번째 <a class="el" href="group__hanjadictionary.html#ga96969351e2a98eb1e776275338822271">Hanja</a> 아이템의 포인터를 구하는 함수  <a href="group__hanjadictionary.html#ga18b8b720d23613a7895f23f7dad926e1">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga18b8b720d23613a7895f23f7dad926e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6185a26a275245ee52660eb91b9b57ca"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga6185a26a275245ee52660eb91b9b57ca">hanja_list_get_nth_key</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list, unsigned int n)</td></tr>
+<tr class="memdesc:ga6185a26a275245ee52660eb91b9b57ca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 의 n번째 아이템의 키를 구하는 함수  <a href="group__hanjadictionary.html#ga6185a26a275245ee52660eb91b9b57ca">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga6185a26a275245ee52660eb91b9b57ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad86b9ac4d57462a74e5c2e6d7400a447"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#gad86b9ac4d57462a74e5c2e6d7400a447">hanja_list_get_nth_value</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list, unsigned int n)</td></tr>
+<tr class="memdesc:gad86b9ac4d57462a74e5c2e6d7400a447"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 의 n번째 아이템의 값를 구하는 함수  <a href="group__hanjadictionary.html#gad86b9ac4d57462a74e5c2e6d7400a447">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:gad86b9ac4d57462a74e5c2e6d7400a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga978c07c6bb77fa9bd468344dce5a407c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga978c07c6bb77fa9bd468344dce5a407c">hanja_list_get_nth_comment</a> (const <a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list, unsigned int n)</td></tr>
+<tr class="memdesc:ga978c07c6bb77fa9bd468344dce5a407c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> 의 n번째 아이템의 설명을 구하는 함수  <a href="group__hanjadictionary.html#ga978c07c6bb77fa9bd468344dce5a407c">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga978c07c6bb77fa9bd468344dce5a407c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63619e6913dd17925c0f7a13068eee72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hanjadictionary.html#ga63619e6913dd17925c0f7a13068eee72">hanja_list_delete</a> (<a class="el" href="group__hanjadictionary.html#ga4a7a4937b0fbe7689f2d2935c34be19b">HanjaList</a> *list)</td></tr>
+<tr class="memdesc:ga63619e6913dd17925c0f7a13068eee72"><td class="mdescLeft">&#160;</td><td class="mdescRight">한자 사전 검색 함수가 리턴한 결과를 free하는 함수  <a href="group__hanjadictionary.html#ga63619e6913dd17925c0f7a13068eee72">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ga63619e6913dd17925c0f7a13068eee72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1dee1e691a58a183e82ab91131c0af4"><td class="memItemLeft" align="right" valign="top"><a id="ab1dee1e691a58a183e82ab91131c0af4"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>hanja_compatibility_form</b> (<a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *hanja, const <a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *hangul, size_t n)</td></tr>
+<tr class="separator:ab1dee1e691a58a183e82ab91131c0af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfc5c25d6a52c26b38f7f7168f45d04"><td class="memItemLeft" align="right" valign="top"><a id="a4bfc5c25d6a52c26b38f7f7168f45d04"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>hanja_unified_form</b> (<a class="el" href="group__hangulctype.html#ga2c1a56543786ad0dcce173493019448c">ucschar</a> *str, size_t n)</td></tr>
+<tr class="separator:a4bfc5c25d6a52c26b38f7f7168f45d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
